@@ -8,9 +8,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{43FB7C99-7
 		docs\readme.md = docs\readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cqrs", "cqrs", "{78A08D2C-1678-4D7A-8348-C498F8879FDD}"
+	ProjectSection(SolutionItems) = preProject
+		docs\cqrs\docker-compose.yml = docs\cqrs\docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78A08D2C-1678-4D7A-8348-C498F8879FDD} = {43FB7C99-7B41-4421-886D-74237E41C60B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
