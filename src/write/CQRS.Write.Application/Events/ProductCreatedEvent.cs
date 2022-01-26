@@ -1,4 +1,4 @@
-﻿namespace CQRS.Write.Application.Events
+﻿namespace Events
 {
     public class ProductCreatedEvent
     {

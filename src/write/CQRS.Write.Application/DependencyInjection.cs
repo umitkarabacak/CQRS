@@ -1,8 +1,8 @@
 ﻿global using AutoMapper;
 global using CQRS.Write.Application.Common.Interfaces;
 global using CQRS.Write.Application.Common.Mappings;
-global using CQRS.Write.Application.Events;
 global using CQRS.Write.Domain.Entities;
+global using Events;
 global using FluentValidation;
 global using MediatR;
 global using System.Reflection;
