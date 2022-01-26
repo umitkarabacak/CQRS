@@ -2,6 +2,7 @@
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.DependencyInjection;
 
+using CQRS.Write.Application.Common.Interfaces;
 using Microsoft.Extensions.Configuration;
 
 namespace CQRS.Write.Infrastructure
@@ -13,6 +14,8 @@ namespace CQRS.Write.Infrastructure
             services.AddDbContext<ProjectContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("Default"))
             );
+
+            services.AddScoped<IProjectContext>(provider => provider.GetService<ProjectContext>());
 
             return services;
         }

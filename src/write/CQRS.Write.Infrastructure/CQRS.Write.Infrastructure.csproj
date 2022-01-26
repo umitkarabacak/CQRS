@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CQRS.Write.Application\CQRS.Write.Application.csproj" />
     <ProjectReference Include="..\CQRS.Write.Domain\CQRS.Write.Domain.csproj" />
   </ItemGroup>
 

@@ -1,6 +1,8 @@
-﻿namespace CQRS.Write.Infrastructure
+﻿using CQRS.Write.Application.Common.Interfaces;
+
+namespace CQRS.Write.Infrastructure
 {
-    public class ProjectContext : DbContext
+    public class ProjectContext : DbContext, IProjectContext
     {
         public ProjectContext(DbContextOptions<ProjectContext> dbContextOptions)
             : base(dbContextOptions)
