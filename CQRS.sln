@@ -13,12 +13,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cqrs", "cqrs", "{78A08D2C-1
 		docs\cqrs\docker-compose.yml = docs\cqrs\docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{177911E8-52A0-4E2A-902A-3147E7302EA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "write", "write", "{B26F4178-5441-46A5-8C26-05D1BFF524E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Write.Domain", "src\write\CQRS.Write.Domain\CQRS.Write.Domain.csproj", "{56E2AD57-99FF-406D-AFAF-6412598C2C37}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E2AD57-99FF-406D-AFAF-6412598C2C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E2AD57-99FF-406D-AFAF-6412598C2C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E2AD57-99FF-406D-AFAF-6412598C2C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E2AD57-99FF-406D-AFAF-6412598C2C37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78A08D2C-1678-4D7A-8348-C498F8879FDD} = {43FB7C99-7B41-4421-886D-74237E41C60B}
+		{B26F4178-5441-46A5-8C26-05D1BFF524E7} = {177911E8-52A0-4E2A-902A-3147E7302EA6}
+		{56E2AD57-99FF-406D-AFAF-6412598C2C37} = {B26F4178-5441-46A5-8C26-05D1BFF524E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
