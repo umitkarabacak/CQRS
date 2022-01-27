@@ -20,10 +20,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-
-    using var scope = app.Services.CreateScope();
-    var context = scope.ServiceProvider.GetRequiredService<ProjectContext>();
-    var response = await context.Database.EnsureCreatedAsync();
 }
 
 app.UseHttpsRedirection();
