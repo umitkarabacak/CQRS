@@ -1,5 +1,3 @@
-using Nest;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,17 +7,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-#region Elastic Search
-
-var settings = new ConnectionSettings();
-    settings.DefaultIndex("categories");
-    //settings.BasicAuthentication("username","pwd");
-
-var elasticClient = new ElasticClient(settings);
-
-builder.Services.AddSingleton(elasticClient);
-
-#endregion
 
 var app = builder.Build();
 
