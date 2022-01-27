@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteCategory.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteCategory.Infrastructure", "src\write\category\CQRS.WriteCategory.Infrastructure\CQRS.WriteCategory.Infrastructure.csproj", "{04BF2B1B-59BE-4976-9C67-A61F2BB2D463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteCategory.Api", "src\write\category\CQRS.WriteCategory.Api\CQRS.WriteCategory.Api.csproj", "{FCA61577-3453-487D-824F-25433A44D713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{04BF2B1B-59BE-4976-9C67-A61F2BB2D463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04BF2B1B-59BE-4976-9C67-A61F2BB2D463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04BF2B1B-59BE-4976-9C67-A61F2BB2D463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA61577-3453-487D-824F-25433A44D713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA61577-3453-487D-824F-25433A44D713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA61577-3453-487D-824F-25433A44D713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA61577-3453-487D-824F-25433A44D713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{4177432E-7630-41AB-AEE8-072BC545DDE3} = {1EF7DCB5-E2CF-4A2E-8DAD-98D0185393F0}
 		{AAADE564-43EE-4818-B01E-79127A07D2E2} = {1EF7DCB5-E2CF-4A2E-8DAD-98D0185393F0}
 		{04BF2B1B-59BE-4976-9C67-A61F2BB2D463} = {1EF7DCB5-E2CF-4A2E-8DAD-98D0185393F0}
+		{FCA61577-3453-487D-824F-25433A44D713} = {1EF7DCB5-E2CF-4A2E-8DAD-98D0185393F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
