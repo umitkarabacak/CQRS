@@ -22,6 +22,7 @@ namespace CQRS.WriteCategory.Application.Categories.Commands
         {
             var category = _mapper.Map<Category>(request);
             await _projectContext.Categories.AddAsync(category, cancellationToken);
+            await _projectContext.SaveChangesAsync(cancellationToken);
 
             var categoryCreatedEvent = _mapper.Map<CategoryCreatedEvent>(category);
 
