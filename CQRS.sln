@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteProduct.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteProduct.Api", "src\write\product\CQRS.WriteProduct.Api\CQRS.WriteProduct.Api.csproj", "{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Database.Creator", "src\CQRS.Database.Creator\CQRS.Database.Creator.csproj", "{A7F4C44E-C157-495D-8D1C-AEF4015A781A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,10 @@ Global
 		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F4C44E-C157-495D-8D1C-AEF4015A781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F4C44E-C157-495D-8D1C-AEF4015A781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F4C44E-C157-495D-8D1C-AEF4015A781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F4C44E-C157-495D-8D1C-AEF4015A781A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +162,7 @@ Global
 		{8CF60FC2-3321-4D10-AF1D-92AB20FCEB06} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
 		{C6086E0B-45F4-4D89-B817-A4E5CA2CC083} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
 		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
+		{A7F4C44E-C157-495D-8D1C-AEF4015A781A} = {177911E8-52A0-4E2A-902A-3147E7302EA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
