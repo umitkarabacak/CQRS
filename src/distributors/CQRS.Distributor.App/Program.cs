@@ -20,6 +20,6 @@ builder.Services.AddHostedService<OutboxMessageService>();
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "CQRS Distributor App service is here!");
 
 app.Run();
