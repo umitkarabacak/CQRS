@@ -22,6 +22,7 @@ namespace CQRS.WriteProduct.Application.Products.Commands
         {
             var product = _mapper.Map<Product>(request);
             await _projectContext.Products.AddAsync(product, cancellationToken);
+            await _projectContext.SaveChangesAsync(cancellationToken);
 
             var productCreatedEvent = _mapper.Map<ProductCreatedEvent>(product);
             var outboxMessage = new OutboxMessage

@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteProduct.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteProduct.Infrastructure", "src\write\product\CQRS.WriteProduct.Infrastructure\CQRS.WriteProduct.Infrastructure.csproj", "{C6086E0B-45F4-4D89-B817-A4E5CA2CC083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.WriteProduct.Api", "src\write\product\CQRS.WriteProduct.Api\CQRS.WriteProduct.Api.csproj", "{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{C6086E0B-45F4-4D89-B817-A4E5CA2CC083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6086E0B-45F4-4D89-B817-A4E5CA2CC083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6086E0B-45F4-4D89-B817-A4E5CA2CC083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -177,6 +183,7 @@ Global
 		{996C6B8B-DDB3-488A-B399-5AB33CB00911} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
 		{8CF60FC2-3321-4D10-AF1D-92AB20FCEB06} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
 		{C6086E0B-45F4-4D89-B817-A4E5CA2CC083} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
+		{2F2B72D6-5193-4FC3-8AB0-6ED6C2301A0B} = {BB2B9F3B-5ABF-4B8C-99B6-18F3AFD012DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
