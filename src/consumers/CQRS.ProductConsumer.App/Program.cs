@@ -1,5 +1,5 @@
-using CQRS.CategoryConsumer.App.Consumers;
-using CQRS.CategoryConsumer.App.Services;
+using CQRS.ProductConsumer.App.Consumers;
+using CQRS.ProductConsumer.App.Services;
 using MassTransit;
 using Nest;
 
@@ -9,12 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMassTransit(busConfigurator =>
 {
-    busConfigurator.AddConsumer<CategoryConsumer>();
+    busConfigurator.AddConsumer<ProductConsumer>();
     busConfigurator.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
     {
-        cfg.ReceiveEndpoint("category-consumer", receieEndpointConfigurator =>
+        cfg.ReceiveEndpoint("product-consumer", receieEndpointConfigurator =>
         {
-            receieEndpointConfigurator.ConfigureConsumer<CategoryConsumer>(provider);
+            receieEndpointConfigurator.ConfigureConsumer<ProductConsumer>(provider);
         });
     }));
 });
@@ -24,9 +24,9 @@ builder.Services.AddMassTransit(busConfigurator =>
 #region Elastic Search
 
 var settings = new ConnectionSettings();
-    settings.DefaultIndex("categories");
+    settings.DefaultIndex("products");
     //settings.BasicAuthentication("username","pwd");
-    
+
 var elasticClient = new ElasticClient(settings);
 
 builder.Services.AddSingleton(elasticClient);
@@ -34,10 +34,10 @@ builder.Services.AddSingleton(elasticClient);
 #endregion
 
 
-builder.Services.AddHostedService<ConsumeCategoryService>();
+builder.Services.AddHostedService<ConsumeProductService>();
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Category consume service is here!");
+app.MapGet("/", () => "Product consume service is here!");
 
 app.Run();

@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "consumers", "consumers", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.CategoryConsumer.App", "src\consumers\CQRS.CategoryConsumer.App\CQRS.CategoryConsumer.App.csproj", "{D445426F-D7B2-4970-A392-BEAE82B2E22B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.ProductConsumer.App", "src\consumers\CQRS.ProductConsumer.App\CQRS.ProductConsumer.App.csproj", "{A516F9EA-C50C-4723-841B-4C195BFA0432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{D445426F-D7B2-4970-A392-BEAE82B2E22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D445426F-D7B2-4970-A392-BEAE82B2E22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D445426F-D7B2-4970-A392-BEAE82B2E22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A516F9EA-C50C-4723-841B-4C195BFA0432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A516F9EA-C50C-4723-841B-4C195BFA0432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A516F9EA-C50C-4723-841B-4C195BFA0432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A516F9EA-C50C-4723-841B-4C195BFA0432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{FD50531D-C019-41AC-BCB3-6F900CADF69D} = {8F0B9A48-EABE-4B1C-BC58-D4279393FC99}
 		{A48DF1E6-0962-4C8C-86E8-6A685FFBA27C} = {177911E8-52A0-4E2A-902A-3147E7302EA6}
 		{D445426F-D7B2-4970-A392-BEAE82B2E22B} = {A48DF1E6-0962-4C8C-86E8-6A685FFBA27C}
+		{A516F9EA-C50C-4723-841B-4C195BFA0432} = {A48DF1E6-0962-4C8C-86E8-6A685FFBA27C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64955F49-C902-453D-8EF1-95B11CB3BC8C}
